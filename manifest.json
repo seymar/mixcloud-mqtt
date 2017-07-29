@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "Mixcloud MQTT",
+  "description": "",
+  "version": "1.0",
+
+  "permissions": [
+   "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.mixcloud.com/*",
+        "https://mixcloud.com/*"
+      ],
+      "js": [
+        "config.js",
+        "d3.min.js",
+        "mqtt.js",
+        "mixcloud-mqtt.js"
+      ]
+    }
+  ]
+}
