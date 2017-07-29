@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>Mixcloud MQTT options</title>
+	  <style>
+	    body: { padding: 10px; }
+	  </style>
+	  <script src="mqtt.js"></script>
+	</head>
+
+	<body>
+		<label>
+			MQTT broker<span id="mqtt_status" style="float: right;font-weight: bold;color: red;">Not connected</span><br />
+			<input type="text" id="mqtt_broker" style="width: 100%" placeholder="mqtt://localhost:1884" /><br />
+			<i>Must be secure or localhost for Chrome to allow the connection</i>
+		</label>
+		<br />
+		<br />
+		<label>
+			MQTT topic prefix<br />
+			<input type="text" id="mqtt_prefix" style="text-align: right" placeholder="room/" />mixcloud/trackname
+		</label>
+		<br /><br/>
+		<h2>Authentication (optional)</h2>
+		<label>
+			Username<br />
+			<input type="text" id="mqtt_username" />
+		</label>
+		<br />
+		<br />
+		<label>
+			Password<br />
+			<input type="text" id="mqtt_password" />
+		</label>
+		<br />
+		<br />
+
+	  <button id="save">Save</button>&nbsp;<span id="status"></span>
+
+	  <script src="options.js"></script>
+	</body>
+</html>

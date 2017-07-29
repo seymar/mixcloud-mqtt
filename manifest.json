@@ -6,7 +6,8 @@
   "version": "1.0",
 
   "permissions": [
-   "activeTab"
+   "activeTab",
+   "storage"
   ],
   "content_scripts": [
     {
@@ -15,11 +16,16 @@
         "https://mixcloud.com/*"
       ],
       "js": [
-        "config.js",
         "d3.min.js",
         "mqtt.js",
         "mixcloud-mqtt.js"
       ]
     }
-  ]
+  ],
+
+  "options_page": "options.html",
+  "options_ui": {
+    "chrome_style": true,
+    "page": "options.html"
+  }
 }
