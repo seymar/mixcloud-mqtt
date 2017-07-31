@@ -2,8 +2,8 @@
   "manifest_version": 2,
 
   "name": "Mixcloud MQTT",
-  "description": "",
-  "version": "1.0",
+  "description": "A Chrome Extension that gets info about a currently playing Mixcloud mix and publishes this info to a MQTT broker.",
+  "version": "1.0.1",
 
   "permissions": [
    "activeTab",
@@ -22,7 +22,11 @@
       ]
     }
   ],
-
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
   "options_page": "options.html",
   "options_ui": {
     "chrome_style": true,
